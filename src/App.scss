@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$custom-height: 300px;
+
+h1 {
+  height: $custom-height;
+}
+
