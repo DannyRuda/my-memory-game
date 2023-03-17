@@ -2,6 +2,9 @@ import "./card.scss";
 // bg-sky-400
 // bg-yellow-300
 // shadow-yellow-300
+// bg-amber-900
+// bg-orange-900
+// bg-orange-400 bg-amber-400 bg-yellow-600 bg-yellow-700 bg-emerald-600 bg-emerald-700 bg-red-900 bg-red-300 bg-yellow-400 bg-lime-700
 function Card(props) {
   return (
     <div

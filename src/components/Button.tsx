@@ -1,5 +1,7 @@
+import './button.scss'
+
 function Button(props) {
-    return (<button className={'bg-' + props.color} >
+    return (<button className={props.color} >
         {props.children}
     </button>)
 }
