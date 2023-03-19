@@ -8,7 +8,7 @@ import "./card.scss";
 function Card(props) {
   return (
     <div
-      className={`bg-${props.color} card`}
+      className={`${props.color} card`}
       style={{ boxShadow: `0px 4px 6px -1px ${props.shadowColor}` }}
       onMouseEnter={(e) => {
         e.target.style.boxShadow = `0 10px 15px -3px ${props.shadowColor}`;
@@ -16,6 +16,8 @@ function Card(props) {
       onMouseLeave={(e) => {
         e.target.style.boxShadow = `0 4px 6px -1px ${props.shadowColor}`;
       }}
+      onClick={(e)=>props.handleClick(e)}
+      id={props.title}
     >
       <img src={props.image} />
       <h2>{props.title}</h2>

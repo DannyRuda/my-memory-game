@@ -15,9 +15,11 @@ $width:  270px;
     img {
         width: 100%;
         border-radius: 10px;
+        pointer-events: none;
     }
 
     h2 {
         font-size: 25px;
+        pointer-events: none;
     }
 }
