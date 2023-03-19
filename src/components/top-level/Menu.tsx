@@ -4,7 +4,7 @@ import { Popup } from "../deep/Popup"
 import {Link} from 'react-router-dom'
 
 
-function Menu(props) {
+function Menu() {
     return (<>
         <Popup>
             <h2>Memory Game</h2>

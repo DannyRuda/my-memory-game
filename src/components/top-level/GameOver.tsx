@@ -4,7 +4,7 @@ import { Popup } from "../deep/Popup"
 import { Scores } from "../deep/Scores"
 import {Link, useLocation} from 'react-router-dom'
 
-export default function GameOver(props) {
+export default function GameOver() {
 
   const location = useLocation()
   return (

@@ -1,4 +1,12 @@
-export default function shuffleCards(arr) {
+interface Dish {
+    image: string;
+    title: string;
+    color: string;
+    shadowColor: string;
+    clicked: boolean;
+  }
+
+export default function shuffleCards(arr:Array<Dish>) {
     const randArr = [];
     const clickedCards = arr.filter((card)=>{return card.clicked});
     const unclickedCards = arr.filter((card)=>{return !card.clicked});

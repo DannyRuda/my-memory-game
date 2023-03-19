@@ -1,6 +1,7 @@
+import './App.scss';
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+
 import { Menu } from "./components/top-level/Menu";
 import Rules from "./components/top-level/Rules";
 import GameOver from "./components/top-level/GameOver";

@@ -4,7 +4,7 @@ import { Popup } from "../deep/Popup"
 import {Link} from 'react-router-dom'
 
 
-export default function Rules(props) {
+export default function Rules() {
   return (
     <>
       <Popup>

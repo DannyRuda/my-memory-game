@@ -1,3 +1,4 @@
+import { type } from "os";
 import Boba from "./../assets/card-pictures/boba.jpg";
 import Chicken from "./../assets/card-pictures/chicken-rice.png";
 import Crawfish from "./../assets/card-pictures/crawfish.png";

@@ -1,3 +1,7 @@
+export {}
+
+/*
+
 import './App.scss';
 import { Card } from './components/deep/Card';
 import { GameSection } from './components/deep/GameSection';
@@ -19,3 +23,4 @@ function App() {
 }
 
 export default App
+*/

@@ -7,6 +7,14 @@ import { cardObjects } from "../../logic/card-object-creation";
 import { Card } from "../deep/Card";
 import { useNavigate } from "react-router-dom";
 
+interface Card {
+  image: string;
+  title: string;
+  color: string;
+  clicked: boolean;
+  shadowColor: string;
+}
+
 function Game() {
   const [cards, setCards] = useState(cardObjects);
 
@@ -22,14 +30,14 @@ function Game() {
 
   const shuffledCards = shuffleCards(cards);
 
-  function handleClick(e) {
+  function handleClick(e: any) {
     console.log(e.target.id);
     if (!cards.filter((card) => card.title === e.target.id)[0].clicked) {
       score.current++;
       const copyCards = JSON.parse(JSON.stringify(cards));
-      const index = copyCards.findIndex((card) => card.title === e.target.id);
+      const index = copyCards.findIndex((card:Card) => card.title === e.target.id);
       copyCards[index].clicked = true;
-      if (!copyCards.filter((card) => !card.clicked)[0]) {
+      if (!copyCards.filter((card:Card) => !card.clicked)[0]) {
         if (highscore < score.current) {
           highscore = score.current;
           localStorage.setItem("highscore", JSON.stringify(highscore));

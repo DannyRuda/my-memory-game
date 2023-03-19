@@ -1,6 +1,10 @@
  import { Button } from "./Button";
 
- function ButtonSection(props) {
+ interface ButtonsSectionProps {
+    children: React.ReactNode;
+ }
+
+ function ButtonSection(props: ButtonsSectionProps) {
     return <div className="buttons">
         {props.children}
     </div>

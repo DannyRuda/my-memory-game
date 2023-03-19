@@ -14,8 +14,11 @@ import Zongzi from './../../assets/card-pictures/zongzi.jpg'
 
 import './GameSection.scss';
 
+interface ChildProps {
+    children: React.ReactNode
+}
 
-function GameSection(props) {
+function GameSection(props: ChildProps) {
     return (<>
         <div className="game-section">
             {props.children}
