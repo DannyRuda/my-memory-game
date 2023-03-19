@@ -16,7 +16,7 @@ function Game() {
 
   let highscore = Number(
     localStorage.getItem("highscore")
-      ? JSON.parse(localStorage.getItem("highscore"))
+      ? JSON.parse(localStorage.getItem("highscore")!)
       : 0
   );
 
