@@ -44,8 +44,8 @@ function Game() {
         highscore = score.current;
         localStorage.setItem("highscore", JSON.stringify(highscore));
       }
+      navigate("over/",{state: {currentScore: score.current, highScore: highscore}});
       score.current = 0;
-      navigate("over/");
       setCards(cardObjects);
     }
   }
